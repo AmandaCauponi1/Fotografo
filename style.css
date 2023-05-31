@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+   
+    height: 100vh;
+}
+header{
+    gap: 20px;
+}
+main{
+   
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+main h1{
+    font-family: sans-serif;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+main p{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 23px;
+}
+.header{
+    border: 1px solid black;
+    height: 3rem;
+    width: 29rem;
+    display: flex;
+   font-family: sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+   font-size: 1rem;
+   color: black;
+}
+a{
+    text-decoration: none;
+}
+#btnModal{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.images{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 30px;
+}
+.images1{
+    display: flex;
+    height: 30rem;
+}
+.images2{
+    display: flex;
+    gap: 10rem;
+}
+.img1{
+    width: 60rem;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+.img2{
+    width: 40rem;
+    height: 97.6vh;
+}
+.img3, .img4{
+    width: 29.9rem;
+    margin-top: 9px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+   width: 20%;
+   margin: 0;
+    position: relative;
+}
+.box4{
+    display: flex;
+    flex-direction: column;
+   
+    position: relative;
+}
+.number{
+    color: white;
+}
+#number{
+    color: white;
+}
+.interation1{
+    background-color: transparent;
+    position: absolute;
+    bottom: 0.5px;
+    padding-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+.interation2{
+    background-color: transparent;
+    position: absolute;
+    top: 55rem;
+    padding-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+.interation3{
+    background-color: transparent;
+    width: 29.9rem;
+    position: absolute;
+    top: 24.7rem;
+    padding-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+.interation4{
+    background-color: transparent;
+    width: 29.9rem;
+    position: absolute;
+    top: 24.7rem;
+    padding-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+
+#myModal{
+    display: none;   
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 15% auto;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 10px;
+    gap: 6px;
+}
+label{
+    font-weight: bold;
+}
+input{
+    height: 2rem;
+    width: 60%;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+   padding: 10px;
+}
+#number{
+    color: black;
+}
+.mensage{
+    height: 10rem;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+   
+  
+}
+#btnCancel{
+    background-color: black;
+    color: white;
+    border-radius: 18px;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+}
+#enviar{
+   
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 18px;
+    width: 10rem;
+    cursor: pointer;
+}
+#close{
+    cursor: pointer;
+   font-size: 2rem;
+   float: left;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+footer p{
+    font-size: 1.3rem;
+}
+.icons{
+    height: 1.6rem;
+    width: 1.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
