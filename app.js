@@ -11,7 +11,8 @@ const number = document.getElementById('number')
 
 window.addEventListener('DOMContentLoaded', () => {
     displayModal()
-    // like()
+     like()
+    
 })
 
 function displayModal(){
@@ -35,19 +36,22 @@ enviar.addEventListener('click', () => {
    
 })
 }
-// function like(){
-//     let numero = 0;
-//     const heart = document.getElementById('heart')
-//     heart.addEventListener('click', ()=>{
-    
-//         heart.style.color = 'red'
-//         heart.style.borderColor = 'red'
-    
-    
-//         numero++;
-//         document.getElementById('number').innerHTML = numero;
-//     })
-// }
+ function like(){
+    const likes = document.querySelectorAll('.heart')
+likes.forEach((heart) => {
+    heart.addEventListener('click', (e) => {
+        let style = e.currentTarget.classList
+        if(style.contains('desativado')){
+            heart.setAttribute('src', 'assets/icones/CoracaoVermelho.svg')
+            heart.classList = 'like ativado'
+    }
+    else{
+        heart.setAttribute('src', 'assets/icones/Coracao.svg')
+        heart.classList = 'like desativado'
+    }
+    })
+})  
+ }
 
 
 
